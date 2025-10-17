@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body { 
+    font-family: 'Roboto Slab', serif; 
+    line-height: 1.6; margin: 0; 
+    padding: 0; background-color: rgb(18, 36, 71); 
+    color: #333; }
+        
+ main, footer { 
+    max-width: 80%; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+header {
+    background-image: url(/src/img/xinzhaofondo2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    height: 600px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+        
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
+        
+nav a { text-decoration: none; color: #248EFF; font-weight: bold; }
+        
+main img { max-width: 100%; height: auto; display: block; margin: 20px 0; }
+        
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+    }
+        
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        
+th { background-color: #f4f4f4; }
+        
+form { 
+    margin: 20px auto; 
+    max-width: 600px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+label { display: block;
+        margin-bottom: 5px;
+        font-weight: bold; }
+        
+input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: 2px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        
+button {
+    font-size: 16px;
+    background-color: #0068D6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
