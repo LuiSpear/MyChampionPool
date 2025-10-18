@@ -15,7 +15,7 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         
 header {
-    background-image: url(/src/img/xinzhaofondo2.webp);
+    background-image: url(/img/xinzhaofondo2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@ header {
     align-items: center;
 }
         
-nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; }
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 12px; }
         
 nav a { text-decoration: none; color: #248EFF; font-weight: bold; }
         
