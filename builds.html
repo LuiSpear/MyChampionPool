@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Zhao - Builds | My Champion Pool</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/jpg" href="img/xinzhaoico.jpg">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>Xin Zhao</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gameplay.html">Gameplay</a></li>
+                <li><a href="builds.html" class="active">Builds</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <h2>Builds de Xin Zhao</h2>
+        <p>Rutas de armado optimizadas para cada situación</p>
+    </header>
+
+    <main>
+        <section class="builds-intro">
+            <h2>Elige tu Estilo de Juego</h2>
+            <p>Xin Zhao se adapta a diferentes situaciones. Haz click en cada build para ver los detalles.</p>
+        </section>
+
+        <!-- BUILD 1: BRUISER -->
+        <div class="build-accordion">
+            <button class="build-accordion-header bruiser" onclick="toggleBuild('build1')">
+                <div class="build-title">
+                    <span class="build-icon">🛡️</span>
+                    <div>
+                        <h2>Build Bruiser (Equilibrada)</h2>
+                        <p class="build-subtitle">Daño y resistencia balanceados</p>
+                    </div>
+                </div>
+                <span class="accordion-arrow" id="arrow-build1">▼</span>
+            </button>
+
+            <div class="build-accordion-content" id="build1">
+                <div class="build-content-inner">
+                    <div class="build-info">
+                        <p><strong>¿Cuándo usarla?</strong> Tu equipo necesita frontline pero también daño. Ideal contra
+                            composiciones equilibradas.</p>
+                    </div>
+
+                    <h3>🗡️ Items Core</h3>
+                    <div class="items-compact">
+                        <span class="item-tag">Goredrinker</span>
+                        <span class="item-tag">Botas Mercurio</span>
+                        <span class="item-tag">Cuchilla Negra</span>
+                        <span class="item-tag">Baile de la Muerte</span>
+                    </div>
+
+                    <h3>🔮 Items Situacionales</h3>
+                    <ul class="compact-list">
+                        <li><strong>Ángel de la Guarda:</strong> Contra burst</li>
+                        <li><strong>Recordatorio Mortal:</strong> Contra curación</li>
+                        <li><strong>Malla de Espinas:</strong> Contra muchos AD</li>
+                    </ul>
+
+                    <div class="runes-compact">
+                        <div class="rune-box">
+                            <h4>🌟 Runas</h4>
+                            <p><strong>Primaria:</strong> Conquistador, Triunfo, Tenacidad, Último Esfuerzo</p>
+                            <p><strong>Secundaria:</strong> Condicionamiento, Crecimiento Excesivo</p>
+                        </div>
+                        <div class="skill-box">
+                            <h4>📊 Maxeo</h4>
+                            <p><strong>Q → E → W</strong></p>
+                            <p class="skill-note">Q es tu principal daño</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUILD 2: ASSASSIN -->
+        <div class="build-accordion">
+            <button class="build-accordion-header assassin" onclick="toggleBuild('build2')">
+                <div class="build-title">
+                    <span class="build-icon">⚡</span>
+                    <div>
+                        <h2>Build Assassin (Full Daño)</h2>
+                        <p class="build-subtitle">Elimina carries enemigos rápidamente</p>
+                    </div>
+                </div>
+                <span class="accordion-arrow" id="arrow-build2">▼</span>
+            </button>
+
+            <div class="build-accordion-content" id="build2">
+                <div class="build-content-inner">
+                    <div class="build-info">
+                        <p><strong>¿Cuándo usarla?</strong> Tu equipo ya tiene tanks. Vas muy adelante en early. Alto
+                            riesgo, alta recompensa.</p>
+                    </div>
+
+                    <h3>🗡️ Items Core</h3>
+                    <div class="items-compact">
+                        <span class="item-tag">Exterminio Divino</span>
+                        <span class="item-tag">Botas Rapidez</span>
+                        <span class="item-tag">Filo de la Noche</span>
+                        <span class="item-tag">Lanza de Shojin</span>
+                    </div>
+
+                    <h3>🔮 Items Situacionales</h3>
+                    <ul class="compact-list">
+                        <li><strong>La Coleccionista:</strong> Daño letal adicional</li>
+                        <li><strong>Serylda's Grudge:</strong> Vs tanks con armadura</li>
+                        <li><strong>Lord Dominik:</strong> Máxima penetración</li>
+                    </ul>
+
+                    <div class="runes-compact">
+                        <div class="rune-box">
+                            <h4>🌟 Runas</h4>
+                            <p><strong>Primaria:</strong> Press the Attack, Triunfo, Velocidad Ataque, Golpe de Gracia
+                            </p>
+                            <p><strong>Secundaria:</strong> Colección de Ojos, Cazador de Tesoros</p>
+                        </div>
+                        <div class="skill-box">
+                            <h4>📊 Maxeo</h4>
+                            <p><strong>Q → W → E</strong></p>
+                            <p class="skill-note">W escala mejor con daño</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUILD 3: TANK -->
+        <div class="build-accordion">
+            <button class="build-accordion-header tank" onclick="toggleBuild('build3')">
+                <div class="build-title">
+                    <span class="build-icon">🏔️</span>
+                    <div>
+                        <h2>Build Tank (Iniciación)</h2>
+                        <p class="build-subtitle">Frontline y protección para el equipo</p>
+                    </div>
+                </div>
+                <span class="accordion-arrow" id="arrow-build3">▼</span>
+            </button>
+
+            <div class="build-accordion-content" id="build3">
+                <div class="build-content-inner">
+                    <div class="build-info">
+                        <p><strong>¿Cuándo usarla?</strong> Tu equipo tiene daño pero falta tank. Inicia peleas y
+                            protege a tus carries.</p>
+                    </div>
+
+                    <h3>🗡️ Items Core</h3>
+                    <div class="items-compact">
+                        <span class="item-tag">Jak'Sho</span>
+                        <span class="item-tag">Botas Mercurio</span>
+                        <span class="item-tag">Corazón de Acero</span>
+                        <span class="item-tag">Presagio de Randuin</span>
+                    </div>
+
+                    <h3>🔮 Items Situacionales</h3>
+                    <ul class="compact-list">
+                        <li><strong>Égida Solar:</strong> Daño de aura en teamfights</li>
+                        <li><strong>Visaje Espiritual:</strong> Contra mucho AP</li>
+                        <li><strong>Quimiotanque Turbo:</strong> Movilidad para iniciar</li>
+                    </ul>
+
+                    <div class="runes-compact">
+                        <div class="rune-box">
+                            <h4>🌟 Runas</h4>
+                            <p><strong>Primaria:</strong> Garras del Inmortal, Demoler, Condicionamiento, Crecimiento
+                                Excesivo</p>
+                            <p><strong>Secundaria:</strong> Triunfo, Tenacidad</p>
+                        </div>
+                        <div class="skill-box">
+                            <h4>📊 Maxeo</h4>
+                            <p><strong>E → Q → W</strong></p>
+                            <p class="skill-note">E para más iniciaciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPARACIÓN RÁPIDA -->
+        <section class="comparison-section">
+            <h2>📊 Comparación Rápida</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Aspecto</th>
+                        <th scope="col">Bruiser</th>
+                        <th scope="col">Assassin</th>
+                        <th scope="col">Tank</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Daño</th>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Tanqueo</th>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Dificultad</th>
+                        <td>Media</td>
+                        <td>Alta</td>
+                        <td>Baja</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Early Game</th>
+                        <td>Fuerte</td>
+                        <td>Muy Fuerte</td>
+                        <td>Débil</td>
+                    </tr>
+                    <tr>
+                        <th scope="col">Late Game</th>
+                        <td>Bueno</td>
+                        <td>Riesgoso</td>
+                        <td>Muy Bueno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="tips-final">
+            <h2>💡 Consejos Finales</h2>
+            <ul>
+                <li>✅ <strong>Adaptabilidad:</strong> Lee la composición enemiga y elige tu build</li>
+                <li>✅ <strong>Power Spikes:</strong> Busca peleas con tu primer item completo</li>
+                <li>✅ <strong>Objetivos:</strong> Usa tu R para solotear dragones de forma segura</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center;">
+        <p>Sigue las redes sociales de Riot Games:</p>
+        <a href="https://twitter.com/riotgames" target="_blank">Twitter de Riot Games</a><br>
+        <a href="https://www.instagram.com/riotgames/" target="_blank">Instagram de Riot Games</a><br>
+        <a href="https://www.facebook.com/RiotGames/" target="_blank">Facebook de Riot Games</a><br>
+        <p>&copy; 2025 Página de Fans de Xin Zhao. Todos los derechos reservados a Riot Games.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
