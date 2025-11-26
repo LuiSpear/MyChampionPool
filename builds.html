@@ -36,15 +36,15 @@
 
         <!-- BUILD 1: BRUISER -->
         <div class="build-accordion">
-            <button class="build-accordion-header bruiser" onclick="toggleBuild('build1')">
+            <button class="build-accordion-header bruiser" onclick="toggleBuild('build1')" aria-expanded="false">
                 <div class="build-title">
-                    <span class="build-icon">🛡️</span>
+                    <span class="build-icon" aria-hidden="true">🛡️</span>
                     <div>
                         <h2>Build Bruiser (Equilibrada)</h2>
                         <p class="build-subtitle">Daño y resistencia balanceados</p>
                     </div>
                 </div>
-                <span class="accordion-arrow" id="arrow-build1">▼</span>
+                <span class="accordion-arrow" id="arrow-build1" aria-hidden="true">▼</span>
             </button>
 
             <div class="build-accordion-content" id="build1">
@@ -71,12 +71,12 @@
 
                     <div class="runes-compact">
                         <div class="rune-box">
-                            <h4>🌟 Runas</h4>
+                            <h4><span aria-hidden="true">🌟</span> Runas</h4>
                             <p><strong>Primaria:</strong> Conquistador, Triunfo, Tenacidad, Último Esfuerzo</p>
                             <p><strong>Secundaria:</strong> Condicionamiento, Crecimiento Excesivo</p>
                         </div>
                         <div class="skill-box">
-                            <h4>📊 Maxeo</h4>
+                            <h4><span aria-hidden="true">📊</span> Maxeo</h4>
                             <p><strong>Q → E → W</strong></p>
                             <p class="skill-note">Q es tu principal daño</p>
                         </div>
@@ -89,13 +89,13 @@
         <div class="build-accordion">
             <button class="build-accordion-header assassin" onclick="toggleBuild('build2')">
                 <div class="build-title">
-                    <span class="build-icon">⚡</span>
+                    <span class="build-icon" aria-hidden="true">⚡</span>
                     <div>
                         <h2>Build Assassin (Full Daño)</h2>
                         <p class="build-subtitle">Elimina carries enemigos rápidamente</p>
                     </div>
                 </div>
-                <span class="accordion-arrow" id="arrow-build2">▼</span>
+                <span class="accordion-arrow" id="arrow-build2" aria-hidden="true">▼</span>
             </button>
 
             <div class="build-accordion-content" id="build2">
@@ -105,7 +105,7 @@
                             riesgo, alta recompensa.</p>
                     </div>
 
-                    <h3>🗡️ Items Core</h3>
+                    <h3><span aria-hidden="true">🗡️</span> Items Core</h3>
                     <div class="items-compact">
                         <span class="item-tag">Exterminio Divino</span>
                         <span class="item-tag">Botas Rapidez</span>
@@ -113,7 +113,7 @@
                         <span class="item-tag">Lanza de Shojin</span>
                     </div>
 
-                    <h3>🔮 Items Situacionales</h3>
+                    <h3><span aria-hidden="true">🔮</span> Items Situacionales</h3>
                     <ul class="compact-list">
                         <li><strong>La Coleccionista:</strong> Daño letal adicional</li>
                         <li><strong>Serylda's Grudge:</strong> Vs tanks con armadura</li>
@@ -122,13 +122,13 @@
 
                     <div class="runes-compact">
                         <div class="rune-box">
-                            <h4>🌟 Runas</h4>
+                            <h4><span aria-hidden="true">🌟</span> Runas</h4>
                             <p><strong>Primaria:</strong> Press the Attack, Triunfo, Velocidad Ataque, Golpe de Gracia
                             </p>
                             <p><strong>Secundaria:</strong> Colección de Ojos, Cazador de Tesoros</p>
                         </div>
                         <div class="skill-box">
-                            <h4>📊 Maxeo</h4>
+                            <h4><span aria-hidden="true">📊</span> Maxeo</h4>
                             <p><strong>Q → W → E</strong></p>
                             <p class="skill-note">W escala mejor con daño</p>
                         </div>
@@ -141,13 +141,13 @@
         <div class="build-accordion">
             <button class="build-accordion-header tank" onclick="toggleBuild('build3')">
                 <div class="build-title">
-                    <span class="build-icon">🏔️</span>
+                    <span class="build-icon" aria-hidden="true">🏔️</span>
                     <div>
                         <h2>Build Tank (Iniciación)</h2>
                         <p class="build-subtitle">Frontline y protección para el equipo</p>
                     </div>
                 </div>
-                <span class="accordion-arrow" id="arrow-build3">▼</span>
+                <span class="accordion-arrow" id="arrow-build3" aria-hidden="true">▼</span>
             </button>
 
             <div class="build-accordion-content" id="build3">
@@ -157,7 +157,7 @@
                             protege a tus carries.</p>
                     </div>
 
-                    <h3>🗡️ Items Core</h3>
+                    <h3><span aria-hidden="true">🗡️</span> Items Core</h3>
                     <div class="items-compact">
                         <span class="item-tag">Jak'Sho</span>
                         <span class="item-tag">Botas Mercurio</span>
@@ -165,7 +165,7 @@
                         <span class="item-tag">Presagio de Randuin</span>
                     </div>
 
-                    <h3>🔮 Items Situacionales</h3>
+                    <h3><span aria-hidden="true">🔮</span> Items Situacionales</h3>
                     <ul class="compact-list">
                         <li><strong>Égida Solar:</strong> Daño de aura en teamfights</li>
                         <li><strong>Visaje Espiritual:</strong> Contra mucho AP</li>
@@ -174,13 +174,13 @@
 
                     <div class="runes-compact">
                         <div class="rune-box">
-                            <h4>🌟 Runas</h4>
+                            <h4><span aria-hidden="true">🌟</span> Runas</h4>
                             <p><strong>Primaria:</strong> Garras del Inmortal, Demoler, Condicionamiento, Crecimiento
                                 Excesivo</p>
                             <p><strong>Secundaria:</strong> Triunfo, Tenacidad</p>
                         </div>
                         <div class="skill-box">
-                            <h4>📊 Maxeo</h4>
+                            <h4><span aria-hidden="true">📊</span> Maxeo</h4>
                             <p><strong>E → Q → W</strong></p>
                             <p class="skill-note">E para más iniciaciones</p>
                         </div>
@@ -189,59 +189,13 @@
             </div>
         </div>
 
-        <!-- COMPARACIÓN RÁPIDA -->
-        <section class="comparison-section">
-            <h2>📊 Comparación Rápida</h2>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Aspecto</th>
-                        <th scope="col">Bruiser</th>
-                        <th scope="col">Assassin</th>
-                        <th scope="col">Tank</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Daño</th>
-                        <td>⭐⭐⭐⭐</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                        <td>⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">Tanqueo</th>
-                        <td>⭐⭐⭐</td>
-                        <td>⭐</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">Dificultad</th>
-                        <td>Media</td>
-                        <td>Alta</td>
-                        <td>Baja</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">Early Game</th>
-                        <td>Fuerte</td>
-                        <td>Muy Fuerte</td>
-                        <td>Débil</td>
-                    </tr>
-                    <tr>
-                        <th scope="col">Late Game</th>
-                        <td>Bueno</td>
-                        <td>Riesgoso</td>
-                        <td>Muy Bueno</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
+        
         <section class="tips-final">
-            <h2>💡 Consejos Finales</h2>
+            <h2><span aria-hidden="true">💡</span> Consejos Finales</h2>
             <ul>
-                <li>✅ <strong>Adaptabilidad:</strong> Lee la composición enemiga y elige tu build</li>
-                <li>✅ <strong>Power Spikes:</strong> Busca peleas con tu primer item completo</li>
-                <li>✅ <strong>Objetivos:</strong> Usa tu R para solotear dragones de forma segura</li>
+                <li><span aria-hidden="true">✅</span> <strong>Adaptabilidad:</strong> Lee la composición enemiga y elige tu build</li>
+                <li><span aria-hidden="true">✅</span> <strong>Power Spikes:</strong> Busca peleas con tu primer item completo</li>
+                <li><span aria-hidden="true">✅</span> <strong>Objetivos:</strong> Usa tu R para solotear dragones de forma segura</li>
             </ul>
         </section>
     </main>

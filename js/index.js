@@ -5,7 +5,7 @@ function mostrarMensaje(event) {
 
     // 2. Muestra el mensaje de éxito
     const mensajeDiv = document.getElementById('mensajeExito');
-    mensajeDiv.style.display = 'block';
+    mensajeDiv.style.display = 'block'; // Al hacerse visible, el rol "alert" lo anuncia.
 
     // Opcional: Oculta el formulario después de enviar (o lo resetea)
     const form = document.getElementById('boletinForm');
@@ -19,12 +19,19 @@ function mostrarMensaje(event) {
 function toggleBuild(buildId) {
     const content = document.getElementById(buildId);
     const arrow = document.getElementById('arrow-' + buildId);
+    
+    // Obtener el botón asociado (es el hermano anterior del contenido en el HTML)
+    const button = content.previousElementSibling; 
 
     // Toggle la clase active
     content.classList.toggle('active');
     arrow.classList.toggle('rotate');
-}
 
+    // Accesibilidad: Actualizar aria-expanded
+    const isExpanded = content.classList.contains('active');
+    // El atributo aria-expanded debe ser un string 'true' o 'false'
+    button.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+}
 
 
 // Función para toggle de audiodescripción en videos

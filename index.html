@@ -88,29 +88,30 @@
         </section>
 
         <section id="contacto">
-            <h2>Suscríbete al Boletín de Fans</h2>
-            <p>¿Te gusta Xin Zhao? Suscríbete para recibir noticias y actualizaciones.</p>
-            <form id="boletinForm" onsubmit="return mostrarMensaje(event)">
-                <div>
-                    <label for="nombre">Nombre de Invocador:</label>
-                    <input type="text" id="nombre" name="nombre_invocador" required>
-                </div>
-                <div>
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="correo" required>
-                </div>
-                <div>
-                    <label for="comentario">Comentario (opcional):</label>
-                    <textarea id="comentario" name="comentario" rows="4"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
+    <h2>Suscríbete al Boletín de Fans</h2>
+    <p>¿Te gusta Xin Zhao? Suscríbete para recibir noticias y actualizaciones.</p>
+    <form id="boletinForm" onsubmit="return mostrarMensaje(event)">
+        <div>
+            <label for="nombre">Nombre de Invocador:</label>
+            <input type="text" id="nombre" name="nombre_invocador" required>
+        </div>
+        <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="correo" required>
+        </div>
+        <div>
+            <label for="comentario">Comentario (opcional):</label>
+            <textarea id="comentario" name="comentario" rows="4"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
 
-            <div id="mensajeExito"
-                style="color: green; font-weight: bold; margin-top: 15px; display: none; text-align: center;">
-                ¡Registro completado! ¡Gracias por unirte al boletín de Xin Zhao!
-            </div>
-        </section>
+    <div id="mensajeExito"
+        style="color: green; font-weight: bold; margin-top: 15px; display: none; text-align: center;"
+        role="alert">
+        ¡Registro completado! ¡Gracias por unirte al boletín de Xin Zhao!
+    </div>
+</section>
     </main>
 
     <footer style="text-align: center;">
